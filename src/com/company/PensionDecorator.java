@@ -6,6 +6,7 @@ public abstract class PensionDecorator implements Pension{
     protected Pension decoratedPension;
 
     public PensionDecorator(Pension decoratedPension){
+
         this.decoratedPension = decoratedPension;
     }
 
@@ -13,3 +14,5 @@ public abstract class PensionDecorator implements Pension{
         return decoratedPension.pay();
     }
 }
+
+

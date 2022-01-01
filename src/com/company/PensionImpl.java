@@ -3,14 +3,12 @@ package com.company;
 import java.math.BigDecimal;
 
 public class PensionImpl implements Pension {
-    private String name;
-    private BigDecimal salary;
-    private Integer numberOfSalaries;
+    private final String name;
+    private final BigDecimal salary;
 
-    public PensionImpl(String name, BigDecimal salary, Integer numberOfSalaries){
+    public PensionImpl(String name, BigDecimal salary){
         this.name = name;
         this.salary = salary;
-        this.numberOfSalaries = numberOfSalaries;
     }
 
     @Override
